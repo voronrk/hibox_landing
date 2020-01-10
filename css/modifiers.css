@@ -1,0 +1,35 @@
+.font-22 {
+    font-size:22px;
+}
+
+.font-20 {
+    font-size:18px;
+}
+
+.text-left {
+    text-align:left;
+}
+
+.w-450 {
+    width:450px;
+}
+
+.w-360 {
+    width:360px;
+}
+
+.main-color {
+    color:var(--main-color);
+}
+
+.bg-grey {
+    background-color:var(--bg-grey);
+}
+
+.bg-white {
+    background-color:white;
+}
+
+.flex-1 {
+    flex-grow:1;
+}
