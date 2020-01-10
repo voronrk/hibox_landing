@@ -317,106 +317,10 @@ a {
     transition: coordinate 1s;
 }
 
-.howwork {
-    background-color:var(--main-color);
-    padding:60px;
-    padding-top:20px;
-}
-
-.howwork-title {
-    text-align:center;
-    color:white;
-    font-size:32px;
-}
-
-.howwork-diagramm {
-    background-color:var(--bg-dgrey);
-    height:160px;
-    margin:40px auto;
-    margin-left:80px;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    position:relative;
-}
-
-.howwork-diagramm__arrow {
-    background-image:url("/pic/arrowright.svg");
-    background-repeat:no-repeat;
-    width:30px;
-    height:17px;
-    flex-grow:0;
-}
-
-.howwork-diagramm__item-wrapper-noring {
-    font-weight:600;
-    text-align:center;
-    line-height:1.1;
-    flex-grow:0;
-}
-
-.howwork-diagramm__item-wrapper {
-    border:10px solid var(--main-color);
-    border-radius:50%;
-    font-weight:600;
-    text-align:center;
-    line-height:1.1;
-    flex-grow:0;
-}
-
-.hdiw-toleft {
-    margin-left:-80px;
-}
-
-.howwork-diagramm__item-wrapper--small {
-    width:150px;
-    height:150px;
-    font-size:14px;
-}
-
-.howwork-diagramm__item-wrapper--big {
-    width:180px;
-    height:180px;
-    font-size:14px;
-}
-
-.howwork-diagramm__item {
-    border-radius:50%;
-    width:100%;
-    height:100%;
-    padding:10px;
-}
-
-.howwork-diagramm__num {
-    color:white;
-    background-color:var(--main-color);
-    border-radius:50%;
-    font-size:30px;
-    font-weight:800;
-    width:38px;
-    height:38px;
-    text-align:center;
-    margin:5px auto;
-}
-
-.car {
-    position:absolute;
-    background-image:url("/pic/vehicle.svg");
-    background-repeat:no-repeat;
-    background-size:contain;
-    width: 150px;
-    height:90px;
-    bottom:-50px;
-    right:-50px;
-
-}
-
 .footer {
     display:flex;
     background-color:var(--main-color);
     padding:50px;
-    padding-top:0;
 }
 
 .map {
