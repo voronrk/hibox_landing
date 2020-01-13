@@ -7,7 +7,9 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <title>HiBOX - производитель упаковки из картона</title>
+    <link href="./pic/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/stylemob.css">
     <link rel="stylesheet" href="./css/modifiers.css">
     <link rel="stylesheet" href="./css/carousel.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic" rel="stylesheet"> 
@@ -37,7 +39,7 @@
                     <div class="show-more__description">
                         Оставьте заявку и закажите продающую<br>упаковку для Вашего бизнеса
                     </div>
-                    <a class="show-more__button" href="https://vk.com/">Оставить заявку прямо сейчас</a>
+                    <a class="show-more__button" href="#form">Оставить заявку прямо сейчас</a>
                 </div>
             </div>
         </header>        
@@ -118,14 +120,12 @@
                     <div class="show-more__description">
                         И это ещё не всё,<br>хотите узнать подробнее?
                     </div>
-                    <a class="show-more__button" href="https://vk.com/">Узнать подробности</a>
+                    <a class="show-more__button" href="#form">Узнать подробности</a>
                 </div>
 
             </div>
             <img class="threearrow" src="/pic/threearrow.svg">
         </section>
-
-        <!-- <img class="threearrow" src="/pic/threearrow.svg"> -->
 
         <section class="whywe">
 
@@ -166,7 +166,7 @@
                 <div class="show-more__description show-more__description">
                     Мы расчитаем стоимость заказа<br>БЕСПЛАТНО за один день
                 </div>
-                <a class="show-more__button show-more__button" href="https://vk.com/">Бесплатный расчет стоимости</a>
+                <a class="show-more__button show-more__button" href="#form">Бесплатный расчет стоимости</a>
             </div>
         </section>
 
@@ -194,16 +194,31 @@
         <script src="carousel.js"></script>
 
         <footer class="footer">
-            <img class="map" src="/pic/map.png">
+            
             <div class="communications">
+                
                 <img class="comminications__logo" src="/pic/hibox_logo.png">
                 <div class="communications__address">
                     610004, г. Киров, ул. Ленина, д. 2
-                    <a href="tel:+78002505401">Отдел по работе с клиентами: 8 800 250-54-01</a>
+                    <a href="tel:+78002505401">Отдел по работе с клиентами: 8-800-250-54-01</a>
                     <a href="mailto:sale@hibox.pro">E-mail: sale@hibox.pro</a>
                 </div>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Add9bea37dd19dd75119dbb6e49d0d90b51bdffccf1e7e9365260511d763d69b8&amp;width=100%&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script>
+                    
             </div>
 
+            <div class="form">
+                <a  name="form"></a>
+                <h2 class="form-header">Отправить заявку на бесплатный расчет цены</h2>
+                <input type="text" id="name" class="input input--single" name="name" placeholder="Имя">
+                <input type="text" id="phone" class="input input--single" name="phone" placeholder="Телефон">
+                <div class="noinput" id="noinput1">Укажите, пожалуйста, телефон и/или e-mail, иначе мы не сможем связаться с Вами</div>
+                <input type="text" id="email" class="input input--single" name="email" placeholder="E-mail">
+                <div class="noinput" id="noinput2">Укажите, пожалуйста, телефон и/или e-mail, иначе мы не сможем связаться с Вами</div>
+                <textarea id="text" name="order" class="input input--multi" placeholder="Параметры для расчета или Ваш комментарий"></textarea>
+                <button id="submit" class="submit">Отправить заявку</button>
+            </div>
+            <script src="./js/script.js"></script>
         </footer>
 
     </div>

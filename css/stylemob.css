@@ -1,0 +1,61 @@
+@media (max-width:576px) {
+.footer {
+    flex-direction:column;
+}
+
+.communications {
+    width:100%;
+}
+
+.form {
+    width:100%;
+}
+
+.comminications__logo {
+    width:100%;
+}
+
+.communications__address {
+    font-size:20px;
+    font-weight:700;
+}
+
+.main-wrapper {
+    padding-top:10px;
+}
+
+.header {
+    background-image: url("/pic/manwithboxes_light.png");
+    padding:10px;
+}
+
+.header-top {
+    flex-direction:column;
+    justify-content:center;
+}
+
+.header_logo {
+    width:80%;
+    height:auto;
+    margin-right:0px;
+}
+
+.header_phone {
+    margin-top:10px;
+    display:flex;
+    height:7.5vw;
+    align-items:center;
+    font-size:8vw;
+    padding-left:45px;
+    background-image: url("/pic/phone.svg");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:left;
+}
+
+.h1-wrapper {
+    width:100%;
+    background-color:none;
+}
+
+}
