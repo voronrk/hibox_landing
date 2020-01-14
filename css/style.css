@@ -246,8 +246,9 @@ a {
 .mancool {
     position:absolute;
     left:0;
-    /* bottom:0; */
-    width:20vw;
+    bottom:0;
+    /* width:22vw; */
+    width:420px;
 }
 
 .h2 {
