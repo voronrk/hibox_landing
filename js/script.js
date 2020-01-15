@@ -7,8 +7,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
           text=document.getElementById('text'),
           submit=document.getElementById('submit'),
           noinput1=document.getElementById('noinput1'),
-          noinput2=document.getElementById('noinput2');
-          modal=document.getElementById('modal');
+          noinput2=document.getElementById('noinput2'),
+          modal=document.getElementById('modal'),
+          privecy=document.querySelector('.privecy'),
+          sendOk=document.querySelector('.send-ok'),
+          showPrivecy=document.querySelector('.politic-uri');
 
     phone.addEventListener('focus', () => {
         noinput1.style.display='none';
@@ -20,8 +23,15 @@ document.addEventListener('DOMContentLoaded', ()=> {
         noinput2.style.display='none';
     });
 
-    modal.addEventListener('click', () => {
-        modal.style.display='none';
+    modal.addEventListener('click', (event) => {
+        if (event.target.classList.contains('modal-wrapper') || event.target.classList.contains('send-ok')) {
+        modal.style.display='none' };
+    });
+
+    showPrivecy.addEventListener('click', () => {
+        modal.style.display='flex';
+        privecy.style.display='block';
+        sendOk.style.display='none';
     });
     
     submit.addEventListener('click', () => {
@@ -41,6 +51,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 // let savingResult=(request.responseText);
                 // console.log(savingResult);
                 modal.style.display='flex';
+                sendOk.style.display='flex';
+                privecy.style.display='none';
+
             }
           });
           request.send(params);
@@ -52,6 +65,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
         };
 
     });
+
+
 
     
 });
