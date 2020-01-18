@@ -106,23 +106,28 @@ a {
 
 .can-order-wrapper {
     background-color: var(--bg-grey);
-    /* padding:45px 30px 0px 50px; */
 }
 
-.triangle {
-    border: 80px solid transparent;
-    border-bottom: 0px solid transparent;
-    border-left: 0px solid transparent;
-    border-right: 1170px solid var(--bg-grey);
-    position:relative;
+.triangle-svg {
+    width:100%;
+    height:80px;
+    display:block;
+    margin-top:-70px;
+}
+
+.triangle-img-wrapper {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:auto;
+    height:auto;
     margin-top:-40px;
 }
 
 .triangle-img {
-    position:absolute;
     height:40px;
-    top:-40px;
-    left:585px;
+    margin:0 auto;
+    align-self:stretch;
 }
 
 .can-order-title {
