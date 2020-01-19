@@ -32,6 +32,7 @@ a {
 
 .main-wrapper {
     max-width:1170px;
+    min-width:450px;
     margin: 0 auto;
     background-color:white;
     padding-top:70px;
@@ -45,9 +46,26 @@ a {
     padding-left:130px;
     padding-bottom:70px;
     background-image: url("/pic/manwithboxes.png");
-    background-size:contain;
+    /* background-size:contain; */
+    /* background-size:50vw; */
+    background-size:50%;
     background-repeat:no-repeat;
-    background-position:right;
+    background-position:right bottom;
+}
+
+@media (max-width:800px) {
+    .header {
+        padding: 0 20px 70px 20px;
+        background-size:55%;
+    }
+}
+
+@media (max-width:710px) {
+    .header {
+        background-image: url("/pic/manwithboxes_light.png");
+        background-size:contain;
+
+    }
 }
 
 .header-top {
@@ -55,19 +73,26 @@ a {
     flex-direction:row;
     justify-content:left;
     align-items:center;
+    /* background-color:rgba(255,255,255,0.5); */
+    /* padding-right:400px; */
+    flex-wrap:wrap;
+
+    
 }
 
 .header_logo {
     height:60px;
     margin-right:50px;
+    margin-bottom:10px;
 }
 
 .header_phone {
     display:flex;
-    height:2.2vw;
+    /* height:2.2vw; */
+    height:auto;
     align-items:center;
-    font-size:1.6vw;
-    /* font-size: 27px; */
+    /* font-size:1.6vw; */
+    font-size: 27px;
     font-weight:600;
     color:black;
     padding-left:45px;
@@ -79,7 +104,7 @@ a {
 
 .h1-wrapper {
     width:450px;
-    background-color:rgba(255,255,255,0.5);
+    /* background-color:rgba(255,255,255,0.5); */
 }
 
 .h1 {
@@ -87,7 +112,6 @@ a {
     font-weight:900;
     line-height:1.1;
     margin-top:50px;
-    
 }
 
 .h1-big {
@@ -186,6 +210,8 @@ a {
 
 .show-more {
     margin: 10px auto;
+    background-color:rgba(255,255,255,0.5);
+
 }
 
 .show-more__description {
@@ -461,4 +487,8 @@ a {
     text-decoration:underline;
     color:blue;
     display:inline;
+}
+
+.background-none {
+    background-color:transparent;
 }
