@@ -256,10 +256,8 @@ a {
 
 .threearrow {
     display:block;
-    /* background-color:white; */
     width:60px;
     padding:10px;
-    /* margin:-35px auto; */
     margin:0 auto;
 }
 
@@ -267,25 +265,31 @@ a {
     position:relative;
     background-color:white;
     padding:50px 50px 0px 170px;
-    /* padding-left:170px; */
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     align-items:flex-start;
 }
 
+@media (max-width:1000px) {
+    .show-more--right {
+        margin-right:0;
+    }
+}
+
 .mancool {
     position:absolute;
     left:0;
     bottom:0;
-    /* width:22vw; */
-    width:420px;
+    width:40vw;
+    max-width:420px;
 }
 
 .h2 {
     font-size:44px;
     font-weight:800;
     line-height:1.1;
+    margin-bottom:20px;
 }
 
 .h2-light {
@@ -295,7 +299,9 @@ a {
 .whywe-item {
     padding:40px;
     max-width:30%;
+    min-width:250px;
     margin-left:20px;
+    margin-bottom:10px;
 }
 
 .whywe-item__icon {
@@ -320,7 +326,6 @@ a {
 .whywe-item__text::before {
     color:red;
     content:"■ ";
-
 }
 
 .partners {
