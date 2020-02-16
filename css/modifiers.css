@@ -2,7 +2,7 @@
     font-size:22px;
 }
 
-.font-20 {
+.font-18 {
     font-size:18px;
 }
 
@@ -12,10 +12,12 @@
 
 .w-450 {
     width:450px;
+    min-width:450px;
 }
 
 .w-360 {
     width:360px;
+    min-width:360px;
 }
 
 .main-color {
